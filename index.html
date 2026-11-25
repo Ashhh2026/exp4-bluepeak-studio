@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Bluepeak Studio | Ashwarya Agrawal (23BCON1659)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="student-strip">
+    <div class="container strip-flex">
+      <span><strong>ASHWARYA AGRAWAL</strong> · ROLL NO: <strong>23BCON1659</strong></span>
+      <span class="strip-muted">WEB DEV USING AI · EXPERIMENT 04 (MULTI-PAGE WEBSITE)</span>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">B</span>
+        <span>Bluepeak Studio</span>
+        <span class="brand-roll">23BCON1659</span>
+      </a>
+
+      <button id="menuToggle" class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+
+      <nav id="navLinks" class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="active ">Home</a>
+        <a href="about.html" class=" ">About</a>
+        <a href="services.html" class=" ">Services</a>
+        <a href="contact.html" class=" ">Contact</a>
+        <a href="contact.html" class="nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">ASHWARYA AGRAWAL · ROLL NO: 23BCON1659 · EXP. 04</span>
+        <h1 class="display-h1">
+          We design and ship <span class="serif-italic">resilient</span> digital products.
+        </h1>
+        <p class="lead">
+          Bluepeak Studio partners with founders and engineering teams to turn complex ideas into fast, accessible web applications.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <a href="contact.html" class="btn btn-primary">Start a project →</a>
+          <a href="services.html" class="btn btn-outline">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">01 // CAPABILITIES</span>
+          <h2>Core Studio Services</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <span class="price-tag">01 · DESIGN</span>
+            <h3>Product Interface Systems</h3>
+            <p>Accessible component libraries, responsive grids, and clear typographic hierarchies.</p>
+          </article>
+          <article class="card">
+            <span class="price-tag">02 · ENGINEERING</span>
+            <h3>Full-Stack Web Apps</h3>
+            <p>End-to-end React, Node.js, and database-backed applications engineered for speed.</p>
+          </article>
+          <article class="card">
+            <span class="price-tag">03 · STRATEGY</span>
+            <h3>Launch &amp; Growth Sprints</h3>
+            <p>Conversion-focused landing experiences and analytics instrumentation from day one.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">02 // PROCESS</span>
+          <h2>Four-Step Delivery</h2>
+        </div>
+        <div class="grid-4">
+          <div class="card">
+            <span class="price-tag">STEP 01</span>
+            <h3>Discover</h3>
+            <p>Align on user goals, constraints, and technical scope.</p>
+          </div>
+          <div class="card">
+            <span class="price-tag">STEP 02</span>
+            <h3>Prototype</h3>
+            <p>Validate layouts, navigation flows, and responsive breakpoints.</p>
+          </div>
+          <div class="card">
+            <span class="price-tag">STEP 03</span>
+            <h3>Build</h3>
+            <p>Ship clean, modular frontend and API code with automated checks.</p>
+          </div>
+          <div class="card">
+            <span class="price-tag">STEP 04</span>
+            <h3>Launch</h3>
+            <p>Deploy, monitor performance, and iterate on real user feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Bluepeak Studio</strong>
+          <p class="footer-muted" style="margin-top: 8px;">
+            Digital product design &amp; engineering studio crafted for Experiment 4 by <strong>Ashwarya Agrawal (Roll No: 23BCON1659)</strong>.
+          </p>
+        </div>
+
+        <div>
+          <strong>Pages</strong>
+          <ul class="footer-links" style="margin-top: 8px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services &amp; Packages</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiry Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Studio Newsletter</strong>
+          <p class="footer-muted" style="margin: 6px 0 0;">Monthly notes on web systems &amp; UI craft.</p>
+          <form id="newsletterForm" novalidate>
+            <div class="nl-row">
+              <label for="nlEmail" class="visually-hidden" style="position:absolute;left:-9999px;">Newsletter Email</label>
+              <input id="nlEmail" type="email" placeholder="you@example.com" aria-describedby="nlError" required />
+              <button type="submit" class="btn btn-primary">Join</button>
+            </div>
+            <div id="nlError" class="nl-err" role="alert"></div>
+            <div id="nlSuccess" class="nl-ok" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Bluepeak Studio · Ashwarya Agrawal (Roll No: 23BCON1659)</span>
+        <span>Multi-Page Website with Shared Navigation &amp; Validation</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="validation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

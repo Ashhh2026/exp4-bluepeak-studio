@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bluepeak Studio | Ashwarya Agrawal (23BCON1659)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="student-strip">
+    <div class="container strip-flex">
+      <span><strong>ASHWARYA AGRAWAL</strong> · ROLL NO: <strong>23BCON1659</strong></span>
+      <span class="strip-muted">WEB DEV USING AI · EXPERIMENT 04 (MULTI-PAGE WEBSITE)</span>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">B</span>
+        <span>Bluepeak Studio</span>
+        <span class="brand-roll">23BCON1659</span>
+      </a>
+
+      <button id="menuToggle" class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+
+      <nav id="navLinks" class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class=" ">Home</a>
+        <a href="about.html" class=" ">About</a>
+        <a href="services.html" class=" ">Services</a>
+        <a href="contact.html" class="active ">Contact</a>
+        <a href="contact.html" class="nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">CONTACT · ASHWARYA AGRAWAL (23BCON1659)</span>
+        <h1 class="display-h1">
+          Tell us what you’re <span class="serif-italic">building.</span>
+        </h1>
+        <p class="lead">
+          The form below validates live and on submit — required fields, email format, phone pattern, and message length.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form id="contactForm" class="card" novalidate>
+          <h2 style="margin: 0 0 4px;">Send a message</h2>
+          <p style="margin: 0 0 18px; color: var(--muted); font-size: 0.88rem;">All fields marked * are validated.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="cName">NAME *</label>
+              <input id="cName" name="name" type="text" placeholder="Ashwarya Agrawal" aria-describedby="errName" required />
+              <span id="errName" class="err-msg" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="cEmail">EMAIL *</label>
+              <input id="cEmail" name="email" type="email" placeholder="you@example.com" aria-describedby="errEmail" required />
+              <span id="errEmail" class="err-msg" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="cPhone">PHONE (optional)</label>
+              <input id="cPhone" name="phone" type="tel" placeholder="+91 8302981136" aria-describedby="errPhone" />
+              <span id="errPhone" class="err-msg" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="cSubject">SUBJECT *</label>
+              <select id="cSubject" name="subject" aria-describedby="errSubject" required>
+                <option value="">Choose a subject...</option>
+                <option value="web-app">Full-Stack Web Application</option>
+                <option value="design-system">UI / Design System</option>
+                <option value="audit">Performance &amp; Accessibility Audit</option>
+                <option value="general">General Inquiry</option>
+              </select>
+              <span id="errSubject" class="err-msg" role="alert"></span>
+            </div>
+
+            <div class="field field-full">
+              <label for="cMessage">MESSAGE * <span id="msgCounter" style="font-weight:400; color:var(--muted);">(0/10 min)</span></label>
+              <textarea id="cMessage" name="message" rows="4" placeholder="Tell us about your project, timeline, and goals..." aria-describedby="errMessage" required></textarea>
+              <span id="errMessage" class="err-msg" role="alert"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 8px;">Submit Inquiry →</button>
+          <p id="contactSuccess" class="ok-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div style="display: grid; gap: 18px;">
+          <div class="card">
+            <h3>Direct details</h3>
+            <p style="margin-top: 8px;"><strong>Student Lead:</strong> Ashwarya Agrawal (Roll No: 23BCON1659)</p>
+            <p style="margin-top: 6px;"><strong>Email:</strong> hello@bluepeak.studio</p>
+            <p style="margin-top: 6px;"><strong>Phone:</strong> +91 8302981136</p>
+            <p style="margin-top: 6px;"><strong>Location:</strong> Jaipur, Rajasthan</p>
+          </div>
+
+          <div class="card">
+            <h3>FAQ</h3>
+            <p style="margin-top: 8px;"><strong>How fast can we start?</strong><br />Discovery sprints typically kick off within 5 business days.</p>
+            <p style="margin-top: 12px;"><strong>How does validation work?</strong><br />Both the contact form and footer newsletter reuse a pure shared validation module (<code>validation.js</code>).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Bluepeak Studio</strong>
+          <p class="footer-muted" style="margin-top: 8px;">
+            Digital product design &amp; engineering studio crafted for Experiment 4 by <strong>Ashwarya Agrawal (Roll No: 23BCON1659)</strong>.
+          </p>
+        </div>
+
+        <div>
+          <strong>Pages</strong>
+          <ul class="footer-links" style="margin-top: 8px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services &amp; Packages</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiry Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Studio Newsletter</strong>
+          <p class="footer-muted" style="margin: 6px 0 0;">Monthly notes on web systems &amp; UI craft.</p>
+          <form id="newsletterForm" novalidate>
+            <div class="nl-row">
+              <label for="nlEmail" class="visually-hidden" style="position:absolute;left:-9999px;">Newsletter Email</label>
+              <input id="nlEmail" type="email" placeholder="you@example.com" aria-describedby="nlError" required />
+              <button type="submit" class="btn btn-primary">Join</button>
+            </div>
+            <div id="nlError" class="nl-err" role="alert"></div>
+            <div id="nlSuccess" class="nl-ok" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Bluepeak Studio · Ashwarya Agrawal (Roll No: 23BCON1659)</span>
+        <span>Multi-Page Website with Shared Navigation &amp; Validation</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="validation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

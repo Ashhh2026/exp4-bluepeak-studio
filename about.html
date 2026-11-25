@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Bluepeak Studio | Ashwarya Agrawal (23BCON1659)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="student-strip">
+    <div class="container strip-flex">
+      <span><strong>ASHWARYA AGRAWAL</strong> · ROLL NO: <strong>23BCON1659</strong></span>
+      <span class="strip-muted">WEB DEV USING AI · EXPERIMENT 04 (MULTI-PAGE WEBSITE)</span>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">B</span>
+        <span>Bluepeak Studio</span>
+        <span class="brand-roll">23BCON1659</span>
+      </a>
+
+      <button id="menuToggle" class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+
+      <nav id="navLinks" class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class=" ">Home</a>
+        <a href="about.html" class="active ">About</a>
+        <a href="services.html" class=" ">Services</a>
+        <a href="contact.html" class=" ">Contact</a>
+        <a href="contact.html" class="nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">ABOUT BLUEPEAK STUDIO · ASHWARYA AGRAWAL (23BCON1659)</span>
+        <h1 class="display-h1">
+          Small team, <span class="serif-italic">high craft</span>, zero fluff.
+        </h1>
+        <p class="lead">
+          Founded to bridge thoughtful editorial design with rigorous full-stack software engineering.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">01 // PRINCIPLES</span>
+          <h2>Four Studio Values</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Clarity Over Complexity</h3>
+            <p>Every screen should communicate its primary action within three seconds.</p>
+          </div>
+          <div class="card">
+            <h3>Accessible by Default</h3>
+            <p>Semantic landmarks, keyboard focus states, and high-contrast typography on every page.</p>
+          </div>
+          <div class="card">
+            <h3>Honest Timelines</h3>
+            <p>Weekly working demos instead of black-box handoffs.</p>
+          </div>
+          <div class="card">
+            <h3>Maintainable Code</h3>
+            <p>Shared validation modules and clean separation of concerns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">02 // TEAM</span>
+          <h2>Studio Leads</h2>
+        </div>
+        <div class="grid-4">
+          <div class="card">
+            <span class="price-tag">LEAD ARCHITECT</span>
+            <h3>Ashwarya Agrawal</h3>
+            <p>Roll No: 23BCON1659 · Full-Stack &amp; Product Systems</p>
+          </div>
+          <div class="card">
+            <span class="price-tag">DESIGN</span>
+            <h3>Meera Kapoor</h3>
+            <p>Design Systems &amp; Editorial Typography</p>
+          </div>
+          <div class="card">
+            <span class="price-tag">FRONTEND</span>
+            <h3>Kabir Verma</h3>
+            <p>Accessibility &amp; Interactive Web Performance</p>
+          </div>
+          <div class="card">
+            <span class="price-tag">BACKEND</span>
+            <h3>Ananya Sen</h3>
+            <p>APIs, Data Modeling &amp; Cloud Infrastructure</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Bluepeak Studio</strong>
+          <p class="footer-muted" style="margin-top: 8px;">
+            Digital product design &amp; engineering studio crafted for Experiment 4 by <strong>Ashwarya Agrawal (Roll No: 23BCON1659)</strong>.
+          </p>
+        </div>
+
+        <div>
+          <strong>Pages</strong>
+          <ul class="footer-links" style="margin-top: 8px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services &amp; Packages</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiry Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Studio Newsletter</strong>
+          <p class="footer-muted" style="margin: 6px 0 0;">Monthly notes on web systems &amp; UI craft.</p>
+          <form id="newsletterForm" novalidate>
+            <div class="nl-row">
+              <label for="nlEmail" class="visually-hidden" style="position:absolute;left:-9999px;">Newsletter Email</label>
+              <input id="nlEmail" type="email" placeholder="you@example.com" aria-describedby="nlError" required />
+              <button type="submit" class="btn btn-primary">Join</button>
+            </div>
+            <div id="nlError" class="nl-err" role="alert"></div>
+            <div id="nlSuccess" class="nl-ok" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Bluepeak Studio · Ashwarya Agrawal (Roll No: 23BCON1659)</span>
+        <span>Multi-Page Website with Shared Navigation &amp; Validation</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="validation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
